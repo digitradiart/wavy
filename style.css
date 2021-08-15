@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(180, 0, 0);
+    color: white;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.circle {
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    margin: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.circle.grow {
+    transform: scale(2);
+    opacity: 0.5;
+}
